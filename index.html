@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Wolrd!</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./scripts/tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-grayDark dark:bg-black">
+
+  <div class="min-h-[100vh] text-white px-4 md:px-8 lg:px-32 py-12 flex flex-col">
+    <header class="flex flex-col lg:flex-row items-center justify-between">
+      <div class="flex flex-row mb-5 justify-center align-center">
+        <p class="text-3xl text-white dark:text-white">#OLD_DAYS_GEEKS</p>
+        <div class="ml-4 ">
+          <input class="switch mode" type="checkbox">
+        </div>
+      </div>
+      <nav>
+        <ul class="flex gap-8 lg:gap-12 align-center">
+          <li class="font-medium  lg:inline hover:text-primary">
+            <a href="/">Home</a>
+          </li>
+
+          <li class="font-medium  lg:inline hover:text-primary">
+            <a href="">About</a>
+          </li>
+
+          <li class="font-medium  lg:inline hover:text-primary">
+            <a href="">Library</a>
+          </li>
+          <li class=" hover:text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex flex-col-reverse lg:flex-row items-center justify-between mt-16">
+      <div class="basis-2/3 2xl:basis-1/3">
+        <h1 class="capitalize text-[32px] text-center lg:text-[56px] lg:text-left font-black leading-tight">
+          Keep your good old day memories!
+        </h1>
+
+        <p class="mt-6 text-gray text-center lg:text-left">
+          Archive your old day tech and keep them safe for a few more decades
+          if you want to do so you can!
+        </p>
+
+        <div class="mt-14 text-center lg:text-left">
+          <button
+            class="bg-primary text-white hover:bg-primaryDark font-semibold min-w-[128px] rounded-xl py-[18px] px-10 w-[256px] lg:w-auto">
+            Let's Try
+          </button>
+
+          <button
+            class="text-primary font-semibold hover:bg-primary hover:text-white  rounded-xl py-[18px] px-10 mt-2 lg:mt-0 lg:ml-4">
+            See other’s Snippets
+          </button>
+        </div>
+      </div>
+
+      <div class="lg:ml-8 overflow-hidden">
+        <img src="./assets/images/hero.png" alt="Hero Image" class="w-100 -rotate-12 lg:rotate-0" />
+      </div>
+    </main>
+
+    <footer class="text-center mt-16 lg:mt-0 lg:text-left">
+      <button class="animate-bounce text-white hover:text-primary dark:text-white dark:hover:text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+        </svg>
+      </button>
+    </footer>
+  </div>
+
+
+
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
